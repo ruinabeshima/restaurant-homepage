@@ -17,17 +17,29 @@ export function CreateCuisine(foodTitle){
   newCuisine.appendChild(foodContainer)
 }
 
-export function CreateFoodItem(foodContainer, foodTitle){
+export function CreateFoodItem(foodContainer, foodTitle, price, imageURL){
+  // Creating singular food item div
   const foodItem = document.createElement("div")
   foodItem.id = foodTitle.toLowerCase()
   foodItem.classList.add("food-item")
   foodContainer.appendChild(foodItem)
+
+  // Food Name 
   const foodName = document.createElement("p")
+  foodName.classList.add("food-name")
   foodName.textContent = foodTitle
   foodItem.appendChild(foodName)
+
+  // Food Price 
+  const foodPrice = document.createElement("p")
+  foodPrice.classList.add("food-price")
+  foodPrice.textContent = "$" + price
+  foodItem.appendChild(foodPrice)
+
+  // Food Image 
+  const foodImage = document.createElement("img")
+  foodImage.src = imageURL
+  foodImage.classList.add("food-image")
+  foodItem.appendChild(foodImage)
 }
 
-export function CreateMenuContent(){
-  const foodItem = document.createElement("div")
-  foodItem.classList.add("food-item")
-}

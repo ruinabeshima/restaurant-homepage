@@ -2,6 +2,7 @@
   padding: none; 
   margin: none; 
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  border: 1px solid red; 
 }
 
 body {
@@ -45,8 +46,12 @@ header > nav > button {
 }
 
 .menu-div {
-  border: 1px solid black; 
-  margin-top: 1rem; 
-  text-align: center; 
+  border: 1px solid black;  
+  text-align: center;
+  margin: none;  
 }
+
+ p {
+  margin: none; 
+ }
 
