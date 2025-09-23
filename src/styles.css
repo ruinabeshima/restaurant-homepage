@@ -2,7 +2,6 @@
   padding: none; 
   margin: none; 
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-  border: 1px solid red; 
 }
 
 body {
@@ -46,12 +45,32 @@ header > nav > button {
 }
 
 .menu-div {
-  border: 1px solid black;  
   text-align: center;
   margin: none;  
 }
 
- p {
-  margin: none; 
- }
+.menu-div > p {
+  margin-top: 2rem; 
+  font-size: 2rem; 
+}
+
+.food-container {
+  display: flex; 
+  justify-content: center;
+  gap: 5rem;  
+}
+
+.food-image {
+  height: 10rem; 
+  width: 10rem;
+  border-radius: 1rem;  
+}
+
+#indian {
+  margin-bottom: 3rem; 
+}
+
+.food-price {
+  font-style: italic; 
+}
 

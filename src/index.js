@@ -52,6 +52,10 @@ menuButton.addEventListener("click", function(){
   CreateFoodItem(indianContainer, "Tikka Masala", "20.00", tikkamasala)
 })
 
+aboutButton.addEventListener("click", function(){
+  alert("Hello")
+})
+
 
 
 
