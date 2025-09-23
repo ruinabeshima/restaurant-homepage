@@ -43,3 +43,10 @@ header > nav > button {
 #home-div > p, #home-div > h1 {
   width: 30rem; 
 }
+
+.menu-div {
+  border: 1px solid black; 
+  margin-top: 1rem; 
+  text-align: center; 
+}
+
