@@ -1,6 +1,7 @@
 import "./styles.css"
 import { CreateHomeContent } from "./components/home"
 import {CreateCuisine, CreateFoodItem} from "./components/menu"
+import { CreateAboutContent } from "./components/about"
 
 import pizza from "./assets/pizza.jpg"
 import pasta from "./assets/pasta.jpg"
@@ -11,6 +12,7 @@ import duck from "./assets/duck.jpg"
 import panipuri from "./assets/panipuri.jpg"
 import tandoori from "./assets/tandoori.jpg"
 import tikkamasala from "./assets/tikkamasala.jpg"
+import aboutImage from "./assets/chef.jpg"
 
 const homeButton = document.getElementById("home-button")
 const menuButton = document.getElementById("menu-button")
@@ -53,7 +55,8 @@ menuButton.addEventListener("click", function(){
 })
 
 aboutButton.addEventListener("click", function(){
-  alert("Hello")
+  DeleteDiv()
+  CreateAboutContent(aboutImage)
 })
 
 
