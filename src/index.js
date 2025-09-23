@@ -1,15 +1,30 @@
 import "./styles.css"
+import { CreateHomeContent } from "./components/home"
+import {CreateCuisine, CreateFoodCard} from "./components/menu"
 
-const content = document.getElementById("content")
-const homediv = document.createElement("div")
-homediv.id = "home-div"
-content.appendChild(homediv)
-const title = document.createElement("h1")
-title.textContent = "Welcome to Rui's Restaurant!"
-homediv.appendChild(title)
-const description = document.createElement("p")
-description.textContent = "A welcoming restaurant offering a diverse menu of fresh, high-quality dishes in a comfortable and inviting atmosphere, with friendly service for any occasion."
-homediv.appendChild(description)
+const homeButton = document.getElementById("home-button")
+const menuButton = document.getElementById("menu-button")
+const aboutButton = document.getElementById("about-button")
+
+function DeleteDiv(){
+  const deleteItems = document.querySelectorAll(".content-div")
+  deleteItems.forEach(element => {
+    element.remove()
+  });
+}
+
+CreateHomeContent()
+
+homeButton.addEventListener("click", function(){
+  DeleteDiv()
+  CreateHomeContent()
+})
+
+menuButton.addEventListener("click", function(){
+  DeleteDiv()
+  CreateCuisine("Indian")
+})
+
 
 
 
